@@ -1,0 +1,109 @@
+
+
+body {
+  background-color: white;
+}
+
+.center {
+  text-align: center;
+
+}
+ 
+
+
+
+.flex-container {
+  display: flex;
+  flex-wrap: nowrap;
+  background-color: white;
+}
+
+.flex-container .box {
+  background-color: #888888;
+  width: 50%;
+  margin: 8px;
+  text-align: center;
+  line-height: 25px;
+  font-size: 16px;
+  border: 2px solid black;
+}
+
+.box .smallbox1 {
+ display: inline; /* the default for span */
+  width: 150px;
+  height: 20px;
+  padding: 5px;
+  border: 2px solid black;  
+  background-color: #ffb3b3; 
+  float: right;
+  
+
+}
+
+.box .smallbox2 {
+ display: inline; /* the default for span */
+  width: 150px;
+  height: 20px;
+  padding: 5px;
+  border: 2px solid black;  
+  background-color: #b30000; 
+ float: right;
+color: white;
+}
+
+.box .smallbox3 {
+ display: inline; /* the default for span */
+  width: 150px;
+  height: 20px;
+  padding: 5px;
+  border: 2px solid black;  
+  background-color: #ffe680; 
+ float: right;
+/* Simple Responsive Framework. */
+}
+.row {
+ width: 100%
+}
+
+/* On screens that are 992px wide or more, the background color is white */
+@media screen and (min-width: 992px)
+  body {
+    background-color: white;
+    color: black;
+
+     
+  }
+}
+
+/* On screens that are between 768px and 991px, the background color is white */
+@media screen and (max-width: 991px) {.box .smallbox1 ,.box  .smallbox2 ,.box .smallbox3 
+   {
+   float: left;
+   border: 1px solid green
+	.smallbox1{
+width: 33.3%;
+     
+  }
+	.smallbox2{
+width: 66.6%;
+     
+  }
+	.smallbox3{
+width: 99.9%;
+     
+  }  
+  body {
+    background-color: white;
+    color: black;
+    
+  }
+/* On screens that are equal to or less than 767px, the background color is white */
+@media screen and (max-width: 767px) {
+  body {
+    background-color: white;
+    color: white;
+  }
+
+
+
+
